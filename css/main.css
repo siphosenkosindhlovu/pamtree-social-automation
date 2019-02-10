@@ -215,8 +215,10 @@ body {
   justify-content: space-around;
 }
 .maincontainer .aside__content .settings i {
-  margin-right: 5px;
   color: #EF4C85;
+}
+.maincontainer .aside__content .settings a {
+  color: #2F2F2F;
 }
 .maincontainer .aside__content .logs {
   border: 1px solid #CCCCCC;

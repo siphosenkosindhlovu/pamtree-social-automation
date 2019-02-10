@@ -216,8 +216,10 @@ body {
 
       .settings {
         i {
-          margin-right: 5px;
           color: $accent-color;
+        }
+        a{
+          color: $text-primary;
         }
       }
 

@@ -78,6 +78,9 @@ body {
   color: white;
   background-color: #EF4C85;
 }
+.btn-pink:hover {
+  background-color: #c4406e;
+}
 
 .btn-rounded-pill {
   border-radius: 20px;

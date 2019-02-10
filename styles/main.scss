@@ -74,6 +74,9 @@ body {
 .btn-pink {
   color: white;
   background-color: $accent-color;
+  &:hover{
+    background-color: rgb(196, 64, 110); 
+  }
 }
 .btn-rounded-pill{
   border-radius: 20px; 

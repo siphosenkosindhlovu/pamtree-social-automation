@@ -1,0 +1,17 @@
+$text-blue: #00356A;
+$text-grey: #939393;
+$text-red: #FF0707;
+$input-border: #C4C4C4;
+$text-primary: #2F2F2F;
+$accent-color: #EF4C85;
+$container-border: #CCCCCC;
+$header-border: #E0E0E0;
+$active-pill: #B1BC19;
+$card-border: #EAEAEA;
+$aside-bg: #F7F7F7;
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

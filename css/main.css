@@ -1,0 +1,233 @@
+.maincontainer .aside__nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2F2F2F;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}
+.checkbox input[type=checkbox]:checked + .checkmark i[class*=fa-check-square] {
+  display: block;
+}
+.checkbox input[type=checkbox]:checked + .checkmark i[class*=fa-square] {
+  display: none;
+}
+.checkbox .checkmark i[class*=fa-check-square] {
+  display: none;
+  color: #EF4C85;
+}
+.checkbox .checkmark i[class*=fa-square] {
+  display: block;
+  color: #C4C4C4;
+}
+
+.input-box {
+  border-radius: 12px;
+  height: 25px;
+  margin: 0;
+  border: 1px solid #C4C4C4;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  overflow: none;
+  min-width: 1px;
+  width: auto;
+  max-width: 100px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.input-box input {
+  border: none;
+  width: auto;
+  background: transparent;
+  width: 85%;
+}
+.input-box input:focus {
+  outline: none;
+}
+.input-box input[type=text] {
+  width: 65px;
+}
+.input-box input[type=number] {
+  width: 45px;
+}
+.input-box a {
+  font-size: 14px;
+  color: #C4C4C4;
+  display: flex;
+  flex-basis: 15%;
+  align-items: center;
+}
+.input-box select {
+  border: none;
+  -webkit-appearance: none;
+}
+
+.btn-pink {
+  color: white;
+  background-color: #EF4C85;
+}
+
+.btn-rounded-pill {
+  border-radius: 20px;
+}
+
+.users-grid {
+  font-weight: 400;
+}
+.users-grid .vertical-divider {
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: #C4C4C4;
+}
+.users-grid__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-left: -15px;
+}
+.users-grid__header .logo {
+  padding-left: 15px;
+}
+.users-grid__pills {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.users-grid__pills button {
+  font-size: 12px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #EF4C85;
+}
+.users-grid__pills .btn-active {
+  background-color: #B1BC19;
+}
+.users-grid__users {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.users-grid__users .user-card {
+  width: 33%;
+  float: left;
+}
+.users-grid__users .user-card .card {
+  padding: 7px;
+  margin: 5px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+}
+.users-grid__users .user-card .card .profile-picture img {
+  height: 50px;
+}
+.users-grid__users .user-card .card .profile-details {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.users-grid__users .user-card .card .profile-details .username {
+  color: #00356A;
+}
+.users-grid__users .user-card .card .profile-details .displayname {
+  color: #939393;
+}
+.users-grid__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.float-labels {
+  display: flex;
+  align-items: center;
+}
+.float-labels label {
+  margin: 10px;
+  margin-left: 0 !important;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 32px;
+}
+.logo__brand {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.maincontainer {
+  border: 1px solid #CCCCCC;
+  padding: 0 15px;
+  font-size: 12px;
+}
+.maincontainer .aside {
+  background-color: #F7F7F7;
+  padding: 3px;
+}
+.maincontainer .aside__nav {
+  font-size: 15px;
+  height: 50px;
+  border: none;
+}
+.maincontainer .aside__nav .active {
+  border: none;
+}
+.maincontainer .aside__nav a {
+  color: #2F2F2F;
+}
+.maincontainer .aside__nav a i {
+  color: #EF4C85;
+}
+.maincontainer .aside__content {
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.maincontainer .aside__content .settings i {
+  margin-right: 5px;
+  color: #EF4C85;
+}
+.maincontainer .aside__content .logs {
+  border: 1px solid #CCCCCC;
+  border-radius: 7px;
+  padding: 15px;
+  padding-top: 25px;
+  position: relative;
+}
+.maincontainer .aside__content .logs__title {
+  position: absolute;
+  background: white;
+  padding: 4px;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=main.css.map */

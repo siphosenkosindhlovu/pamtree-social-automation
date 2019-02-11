@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="bootstrap">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pamtree Social Automation</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body class="modal-open">
+  <header class="text-center">
+    <img src="assets/header.PNG" style="max-width: 1010px">
+  </header>
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#settings">
+      Launch demo modal
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade show" style="display: block" id="settings" tabindex="-1" role="dialog"
+      aria-labelledby="settings" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg settings-popup" role="document">
+      <div class="modal-content">
+        <div class="modal-header settings-popup__header">
+          <h3 class="modal-title settings-popup__title">Pamtree Social Automation Follow Settings</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body settings-popup__body">
+          <nav class="nav">
+            <a class="nav-link" href="#">Performance Options</a>
+            <a class="nav-link active" href="#">Configure Wait Times</a>
+            <a class="nav-link" href="#">Configure Following Options</a>
+          </nav>
+          <div class="content">
+            <ul class="checklist">
+              <li class="my-2">
+                <span class="float-labels">
+                  Wait
+                  <span class="input-box mx-1">
+                    <input type="number" style="width: 35px" value="20" name="sec-after-follow">
+                  </span>
+                  seconds after follow/unfollow
+                </span>
+              </li>
+              <li class="my-2">
+                <span class="float-labels">
+                  Wait
+                  <span class="input-box mx-1">
+                    <input type="number" style="width: 35px" value="1" name="sec-after-follow">
+                  </span>
+                  seconds after skip
+                </span>
+              </li>
+              <li class="my-2 float-labels">
+                <label class="checkbox mr-2">
+                  <input type="checkbox" id="randomise-percentage">
+                  <span class="checkmark">
+                    <i class="fa fa-square"></i>
+                    <i class="fa fa-check-square"></i>
+                  </span>
+                </label>
+                <label for="randomise-percentage">Randomize wait time by up to
+                </label>
+                <span class="input-box mr-1">
+                  <input type="number" style="width: 35px" value="8" name="sec-after-follow">
+                </span>
+                %
+              </li>
+
+              <li class="my-2">
+                <span class="float-labels">
+                  Wait
+                  <span class="input-box mx-1">
+                    <input type="number" style="width: 35px" value="20" name="sec-after-soft">
+                  </span>
+                  minutes after “soft” rate limit
+                </span>
+              </li>
+              <li class="my-2">
+                <span class="float-labels">
+                  Wait
+                  <span class="input-box mx-1">
+                    <input type="number" style="width: 35px" value="1" name="sec-after-follow">
+                  </span>
+                  seconds after skip
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-pink">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="dist/js/bootstrap.js"></script>
+</body>
+
+</html>

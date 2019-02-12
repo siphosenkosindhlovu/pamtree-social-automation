@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+.bootstrap {
   /*!
    * Bootstrap v4.1.3 (https://getbootstrap.com/)
    * Copyright 2011-2018 The Bootstrap Authors
@@ -7,7 +7,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    */
   /*# sourceMappingURL=bootstrap.css.map */
-
+}
 .bootstrap :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -43,7 +43,7 @@
 .bootstrap *::after {
   box-sizing: border-box;
 }
-.bootstrap html {
+.bootstrap {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -57,7 +57,19 @@
 .bootstrap article, .bootstrap aside, .bootstrap figcaption, .bootstrap figure, .bootstrap footer, .bootstrap header, .bootstrap hgroup, .bootstrap main, .bootstrap nav, .bootstrap section {
   display: block;
 }
-.bootstrap body {
+.bootstrap body,
+.bootstrap > div,
+.bootstrap > main,
+.bootstrap > section,
+.bootstrap > aside,
+.bootstrap > span,
+.bootstrap > article,
+.bootstrap > nav,
+.bootstrap > header,
+.bootstrap > footer,
+.bootstrap > figure,
+.bootstrap > figcaption,
+.bootstrap > hgroup {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
@@ -229,7 +241,7 @@
   text-transform: none;
 }
 .bootstrap button,
-.bootstrap html [type=button],
+.bootstrap [type=button],
 .bootstrap [type=reset],
 .bootstrap [type=submit] {
   -webkit-appearance: button;
@@ -7891,6 +7903,7 @@
   }
   @page {
       size: a3;
+
   }
   .bootstrap body {
     min-width: 992px !important;

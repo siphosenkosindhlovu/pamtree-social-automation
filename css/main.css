@@ -120,13 +120,48 @@
   margin-left: -5px;
   margin-right: -5px;
   margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .bootstrap .users-grid__users .user-card {
-  width: 33%;
-  float: left;
+  width: 100%;
+  position: relative;
+}
+.bootstrap .users-grid__users .user-card .overlay {
+  background: rgba(255, 255, 255, 0.78);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bootstrap .users-grid__users .user-card .overlay i {
+  font-size: 32px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+}
+.bootstrap .users-grid__users .user-card .overlay-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.bootstrap .users-grid__users .user-card .overlay--success {
+  color: #EF4C85;
+}
+.bootstrap .users-grid__users .user-card .overlay--pending {
+  color: #004863;
+}
+.bootstrap .users-grid__users .user-card .overlay--pending i {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 50%;
+  color: white;
+  background: #004863;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
 }
 .bootstrap .users-grid__users .user-card .card {
   padding: 7px;
@@ -159,8 +194,7 @@
   align-items: center;
 }
 .bootstrap .float-labels label {
-  margin: 10px;
-  margin-left: 0 !important;
+  margin: 10px 0;
 }
 .bootstrap .logo {
   display: flex;
